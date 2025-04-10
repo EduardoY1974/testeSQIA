@@ -29,22 +29,5 @@ namespace CalculadoraSinqia.Services
                 })
                 .ToList();
         }
-
-        public DateTime ObterDiaUtilAnterior(DateTime data)
-        {
-            DateTime diaAnterior = data.AddDays(-1);
-            while (diaAnterior.DayOfWeek == DayOfWeek.Saturday || diaAnterior.DayOfWeek == DayOfWeek.Sunday)
-            {
-                diaAnterior = diaAnterior.AddDays(-1);
-            }
-            return diaAnterior;
-        }
-
-        public decimal TruncateDecimal(decimal value, int precision)
-        {
-            decimal step = (decimal)Math.Pow(10, precision);
-            decimal temp = Math.Truncate(value * step);
-            return temp / step;
-        }
     }
 }
