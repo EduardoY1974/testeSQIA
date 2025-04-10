@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "CalculadoraSinqia",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CalculadoraSQIA/calcularDebug": {
+      "get": {
+        "tags": [
+          "CalculadoraSQIA"
+        ],
+        "parameters": [
+          {
+            "name": "valorInvestido",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "dataAplicacao",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "dataFinal",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CalculadoraSQIA/calcular": {
+      "get": {
+        "tags": [
+          "CalculadoraSQIA"
+        ],
+        "parameters": [
+          {
+            "name": "valorInvestido",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "dataAplicacao",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "dataFinal",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

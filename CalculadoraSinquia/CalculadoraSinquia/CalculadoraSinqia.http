@@ -1,0 +1,6 @@
+@CalculadoraSinqia_HostAddress = http://localhost:5278
+
+GET {{CalculadoraSinqia_HostAddress}}/calculadorasqia/
+Accept: application/json
+
+###

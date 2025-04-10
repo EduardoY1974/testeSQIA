@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "CalculadoraSQIAController",
+    "Method": "CalcularInvestimento",
+    "RelativePath": "api/CalculadoraSQIA/calcular",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valorInvestido",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataAplicacao",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataFinal",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CalculadoraSQIAController",
+    "Method": "CalcularInvestimentoDebug",
+    "RelativePath": "api/CalculadoraSQIA/calcularDebug",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valorInvestido",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataAplicacao",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataFinal",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
