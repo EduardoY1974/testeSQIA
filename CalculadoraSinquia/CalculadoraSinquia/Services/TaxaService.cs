@@ -11,7 +11,7 @@ namespace CalculadoraSinqia.Services
     {
         private readonly CotacaoContext _context;
 
-        public TaxaService(CotacaoContext context, object value)
+        public TaxaService(CotacaoContext context)
         {
             _context = context;
         }
